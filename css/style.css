@@ -1,0 +1,620 @@
+
+/*----------------------------------
+Template Name: Gamer- HTML Template
+Version: 1.00
+Author: Rehan
+Designer: Rehan Khan
+Contact No: 01822-18 22 07
+
+Designer Profiles:
+    Github Profile Url: https://github.com/rehan606
+    Linkedin Profile Url: https://www.linkedin.com/in/kh-rehan207
+    Facebook Profile Url: https://www.facebook.com/kh.rehan207
+
+Description: A huge selection of health and fitness content,
+             healthy recipes and transformation stories to help you get fit and stay fit!
+
+:::::::::::::::::::::::
+
+Table of Content :::::
+----------------------
+01. Default CSS
+02. Header
+03. Banner
+04. About
+05. Games
+06. Play Instant
+07. Career
+08. Category
+09. Footer
+
+
+----------------------- */
+
+
+/* Inter & Miama Font */
+
+/* Work-sans Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Using for Download Font Miama Font  */
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+@font-face {
+    font-family: 'Miama', sans-serif;
+    src: url(../fonts/Miama.otf) format('otf'),
+         url(../fonts/Miama.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 01. Default css Start*/
+
+:root{
+
+    /* Color */
+    --primary-color: #FF42A5;
+    --secondary-color: #4EC5F7;
+    --heading-color: #0B0223;
+    --paragraph-color:#534C64;
+    --font-color: rgba(255, 255, 255, 0.5);
+
+    /* background-color: */
+    --bg-color: #FF42A5;
+    --button-bg: #FF42A5;
+    --section-bg: #0B0223;
+    
+    /* Font  Family*/
+    --heading-font: "Work Sans", sans-serif;
+    --secondary-font:"Work Sans", sans-serif;
+    --body-font: "Work Sans", sans-serif;
+
+    /* Font Size */
+    --big-heading-font-size: 5.9rem;
+    --heading-font-size: 3rem;
+    --sub-headding-font-size: 1.25rem;
+    --paragraph-font-size: 1.125rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+} 
+
+html , body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--body-font);
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+.container{
+    width: 1440px;
+    /* width: 77.61%; */
+    margin: 0 auto;
+
+}
+
+.img {
+    width: 100%;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+
+a{
+    text-decoration: none;
+}
+a,
+.button {
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+ul,ol {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,ul,ol {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: var(--big-heading-font-size);
+    font-weight: 800;
+}
+h2 {
+    font-size: var(--heading-font-size);
+    font-weight: 700;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 800;
+}
+h4 {
+    font-size: var(--sub-headding-font-size);
+    font-weight: 500;
+}
+h5 {
+    font-size: var(--sub-headding-font-size);
+    font-weight: 600;
+}
+h6 {
+    font-size: 16px;
+}
+p {
+    font-size: var(--paragraph-font-size);
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--paragraph-color);
+    font-family: var(--body-font);
+}
+/* Primary button / Common Button  */
+.btn-primary {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 30px;
+    margin-right: 15px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--bg-color);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+}
+.btn-2{
+    background-color: var(--secondary-color);
+}
+
+.gradient-text{
+    background: linear-gradient(0deg, rgba(135,88,241,1) 0%, rgba(255,66,165,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Default css end ===========================
+============================================*/
+
+
+/* :::::::::::::::Main CSS:::::::::::::::::  */
+
+/* 02. Header css Start*/
+#header{  
+    background-color: #4ec4f79c;
+    box-shadow: 1px 2px 9px 0px rgba(0,0,0,0.15);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    font-size: var(--heading-font-size);
+    color: var(--heading-color);
+    font-size: 2.81rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo img{
+    margin-right: 20px;
+}
+.header-container span{
+    color: var(--primary-color);
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul li a{
+    padding: 10px 20px;
+    font-size: var(--paragraph-font-size);
+    color: var(--paragraph-color);
+    font-weight: 500;
+}
+.nav-bar ul button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--paragraph-font-size);
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-bar ul .fa-youtube{
+    color: red;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* 02. css end ========================*/
+
+
+/* 03.Banner  css Start*/
+#banner{
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+}
+
+.banner-content-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content-area .content{
+    width: 50%;
+}
+.content h3{
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.content h1{
+    
+    margin: 5px 0 24px;
+}
+.content .link{
+    margin-bottom: 35px;
+}
+.content .link a{
+    display: block;
+    font-size: var(--paragraph-font-size);
+    color: var(--paragraph-color);
+    margin-bottom: 17px;
+    font-weight: 500;
+}
+.content .link a>i{
+    margin-right: 15px;
+}
+.content .link a .fa-download,
+.content .link a .fa-circle-play{
+    color: red;
+}
+
+.banner-content-area .banner-image{
+    width: 50%;
+    /* padding: 30px; */
+}
+/* 03. css end ========================*/
+
+
+/* 04. About css Start*/
+#about{
+    /* background: linear-gradient(90deg, rgba(255,66,165,0.1) 0%, rgba(255,66,165,0.1) 100%); */
+    background-color: #fff9fc;
+    padding: 50px 0;
+}
+.content-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-area .image{
+    width: 60%;
+}
+.content-area .about-content{
+    width: 40%;
+    text-align: right;
+}
+.content-area .about-content p{
+    font-size: var(--paragraph-font-size);
+    color: var(--paragraph-color);
+    margin: 25px 0;
+    padding-left: 30px;
+}
+.content-area .about-content .about-btn{
+    margin-right: 0;
+}
+.content-area .about-content span{
+    display: block;
+    margin: 24px 0 10px;
+    color: var(--paragraph-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+.content-area .about-content h3{
+    color: var(--heading-color);
+}
+/* 04. css end ========================*/
+
+/* 05 Games Start*/
+#games{
+    padding: 100px 0;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header p{
+    font-size: var(--paragraph-font-size);
+    color: var(--paragraph-color);
+    margin: 10px 0;
+}
+.games-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.game-image{
+    position: relative;
+    border-radius: 18px;
+    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.game-image img{
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.game-box p{
+    margin-top: 30px;
+    font-size: var(--paragraph-font-size);
+    color: var(--paragraph-color);
+    font-weight: 500;
+}
+.hover-area{
+    width: 100%;
+    background-color: #0B0223;
+}
+.hover-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    display: none;
+    background-color: #0b0223a2;
+    border-radius: 20px;
+    border: 5px solid var(--bg-color);
+    transition: 0.5s ease-in-out;
+}
+.hover-content i{
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hover-content span{
+    color: #FF42A5;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.game-image:hover img{
+    border: 5px solid var(--primary-color);
+}
+.game-image:hover .hover-content{
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* 05  css End ========================*/
+
+
+/* 06. Play Instant- css Start*/
+#play {
+    padding: 80px 0 180px;
+}
+.play-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.play-content{
+    padding: 0 150px;
+    text-align: right;
+}
+.play-content p{
+    color: var(--paragraph-color);
+    margin-top: 20px;
+}
+.play-area .image{
+    margin-left: auto;
+    position: relative;
+}
+.side-image{
+    position: absolute;
+    left: -170px;
+    bottom: -100px;
+}
+/* -----play-2-------- */
+
+.play-area-2 .play-content{
+    padding: 0 150px;
+    text-align: left;
+}
+.play-area-2 .image{
+    margin-right: auto !important; 
+    position: relative;
+}
+.play-area-2 .side-image{
+    position: absolute;
+    left: 470px;
+    bottom: -100px;
+}
+/* 06. css end ========================*/
+
+/* 07.Career - css Start*/
+#career{
+    padding: 100px 0;
+    color: #ffffff;
+    background-color: var(--bg-color);
+    
+    
+}
+.career-content{
+    width: 70%;
+}
+.career-area{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.career-content h2{
+    margin-bottom: 20px;
+}
+.career-content p{
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list-item li{
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #0B0223;
+}
+.list .item-2{
+    text-align: right;
+}
+.career-content .btn-3{
+    background-color: #ffffff;
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+.career-content .btn-3:hover{
+    background-color: var(--section-bg);
+    border: 1px solid var(--heading-color);
+}
+.career-image{
+    border-radius: 20px;
+    width: 30%;
+}
+.career-image img{
+    backdrop-filter: blur(20px);
+    background-color: #ffffff5d;
+    border-radius: 20px;
+}
+/* 07. css end ========================*/
+
+
+/* 08. Category css Start*/
+#category{
+    padding: 100px 0;
+    background-color: #FFF9FC;
+}
+.categoy-are{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.categoy-are .content{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    padding: 5px 20px 5px 10px;
+    transition: 0.5s ease-in-out;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.categoy-are .content:hover{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.categoy-are .content img{
+    margin-right: 15px;
+}
+/* 08. css end ========================*/
+
+
+/* 09.  css Start*/
+#footer{
+    background-color: #0B0223;
+    padding: 100px 0;
+}
+#footer .footer-logo{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .footer-logo>span{
+    color: var(--primary-color);
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.footer-link li{
+    margin-right: 50px;
+}
+.footer-link li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.footer-link li:hover a{
+    color: var(--primary-color);
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.social-icon i{
+    color: #ffffff;
+    font-size: 26px;
+    margin-right: 30px;
+    transition: 0.5s ease-in-out;
+}
+.social-icon i:hover{
+    color: var(--primary-color);
+}
+.footer-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-pages a{
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 40px;
+    font-weight: 300;
+}
+#footer p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+#footer .author{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+/* 09. css end ========================*/
+
+/* Thank You */
+
+
